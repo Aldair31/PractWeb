@@ -1,0 +1,512 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+	font-family: Calibri , 'Trebuchet MS', sans-serif;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 2px 2px 0px #3D3F50;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header nav{
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Bebas Neue';
+    letter-spacing: 3px;
+}
+.txt_inicio{
+    width: 80%;
+    max-width:1000px ;
+    margin: auto;
+}
+header nav h1{
+    font-size: 30px;
+    color: #35495e;
+}
+header nav a{
+    text-decoration: none;
+    color: rgb(26, 24, 24);
+    padding: 10px;
+}
+.seleccionado{
+    color: rgb(62, 62, 145);
+}
+header nav a:hover{
+    color: rgb(62, 62, 145)
+}
+header nav .barras{
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    position: relative;
+}
+.contenedor_inicio .imagen_inicio{
+    padding-top: 40px;
+    background-image: url("../img/img9.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contenedor_inicio .imagen_inicio h1{
+    font-size: 70px;
+    padding: 70px 0px 20px 0px;
+    color: #000;
+    font-family: 'Bebas Neue';
+    letter-spacing: 8px;
+}
+.contenedor_inicio .imagen_inicio .texto_inicio{
+    display:flex ;  
+    flex-direction: column;
+    padding: 15px 0px 10px 0px;
+}
+.contenedor_inicio .imagen_inicio .texto_inicio h2{
+    font-size: 25px;
+    color: #000;
+}
+.contenedor_inicio .imagen_inicio .texto_inicio p{
+    font-size: 15px;
+    width: 30%;
+    color: #000;
+}
+.contenedor_inicio .imagen_inicio button{
+    display: block;
+    margin: 15px 0px 10px 0px;
+    background-color: transparent;
+    padding: 10px 20px;
+    color: #3C4050;
+    font-size: 15px;
+    text-align: center;
+    border:2px solid rgb(6, 1, 46);
+}
+.propiedades_sala{
+    width: 100%;
+    position: relative;
+    background-color: #F1EFF1;
+}
+.propiedades_sala #Sales{
+    position:absolute;
+    top: -50px;
+}
+.propiedades_sala h3{
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    color: #3D3F50;
+    text-align: center;
+    padding: 50px 0px 60px 0px;
+    letter-spacing: 5px;
+}
+.propiedades_sala .prop_sala{
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.propiedades_sala .prop_sala .salas{
+    width: 65%;
+    display: flex;
+    padding: 15px;
+    justify-self: center;
+}
+.propiedades_sala .prop_sala #sala2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.propiedades_sala .prop_sala #sala2 .parrafo{
+    padding-right: 25px;
+    padding-left: 10px;
+}
+.propiedades_sala .prop_sala .salas .parrafo{
+    padding-left: 50px;
+    text-align: justify;
+}
+.propiedades_sala .prop_sala .salas .parrafo h4{
+    font-size: 50px;
+    color: #3D3F50;
+    letter-spacing: 8px;
+    font-family: 'Bebas Neue';
+    padding-bottom: 30px;
+}
+.propiedades_rentales {
+    width: 100%;
+    position: relative;
+}
+.propiedades_rentales #Rentals{
+    position:absolute;
+    top: -50px;
+}
+.propiedades_rentales h3{
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    color: #3D3F50;
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 50px 0px 60px 0px;
+}
+.propiedades_rentales .prop_rental{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.propiedades_rentales .prop_rental .rentals{
+    width: 44%;
+    justify-content: center;
+    margin: auto;
+}
+.propiedades_rentales .prop_rental .rentals .articulo {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.propiedades_rentales .prop_rental .rentals .articulo h5{
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+.propiedades_rentales .prop_rental .rentals .articulo p{
+    font-size: 18px;
+}
+.contenedor_bay{
+    width: 60%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: minmax(200px,200px) minmax(200px,200px);
+    margin: 50px auto;
+}
+.contenedor_bay #Agents{
+    position:absolute;
+    top: -50px;
+}
+.contenedor_bay .bay{
+    padding: 20px;
+}  
+.contenedor_bay .bay h5{
+    font-size: 20px;
+}  
+.contenedor_bay .bay p{
+    font-size: 18px;
+} 
+#bay1{
+    background-color: #F1EFF1;
+    font-size: 30px;
+}
+.contenedor_bay #bay2 .linea{
+    width: 165px;
+    height: 3px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #000;
+}
+.contenedor_bay #bay3 .linea{
+    width: 132px;
+    height: 3px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #000;
+}
+.contenedor_bay #bay4 .linea{
+    width: 105px;
+    height: 3px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #000;
+}
+#bay4{
+    background-color: #F1EFF1;
+}
+.contenedor_clientes .imagen_clientes{
+    background-image: url("../img/img10.jpg");
+    height: 45vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.contenedor_clientes .imagen_clientes h3{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+.contenedor_clientes .imagen_clientes .clientes{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    color: #fff;
+    justify-content: space-around;
+}
+.contenedor_clientes .imagen_clientes .clientes article{
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+.contenedor_formulario{
+    padding-top: 60px;
+    padding-bottom: 50px;
+    background-color: #333646;
+    display: flex;
+    justify-content: center;
+    color: #818694;
+}
+.contenedor_formulario .texto h6{
+    font-size: 20px;
+}
+.contenedor_formulario .texto p{
+    font-size: 18px;
+}
+.contenedor_formulario .formulario{
+    margin-left: 15px;
+}
+.contenedor_formulario .formulario h6{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.contenedor_formulario .texto .texto1{
+    display: flex;
+    padding: 20px 0px;
+    font-size: 20px;
+}
+.contenedor_formulario .texto .texto1 #texto3{
+    margin-left: 70px;
+}
+.contenedor_formulario .formulario .formulario1{
+    display: flex;
+}
+.contenedor_formulario .formulario .formulario1 .formulario2 input{
+    background-color: transparent;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+    border: 1px solid #818694;
+}
+.contenedor_formulario .formulario .formulario1 .formulario2 textarea{
+    display: block;
+	max-width: 180px;
+	min-width: 100px;
+	max-height: 300px;
+	min-height: 120px;
+    background-color: transparent;
+    margin-left: 5px;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #818694;
+}
+.contenedor_formulario .formulario #completar_formulario button{
+    background-color: transparent;
+    color: #fff;
+    border: 0px;
+    font-size: 15px;
+    margin-left: 310px;
+}
+@media screen and (max-width: 900px) {
+    header{
+        padding: 20px;
+        height: 20vh;
+        justify-content: space-between;
+    }
+    header h1{
+        width: 50%;
+    }
+    header nav{
+        margin-top: 15px;
+        justify-content: space-between;
+    }
+    header nav a{
+        display: none;
+    }
+    header nav .barras{
+        display: block;
+    }
+    @keyframes animacion_menu_movil_abierto {
+        0%{
+            right: 3000px;
+        }
+        100%{
+            right: 0px;
+        }
+    }
+    @keyframes animacion_menu_movil_cerrado {
+        0%{
+            right: 0px;
+        }
+        100%{
+            right: 3000px;
+        }
+    }    
+    .menu_movil{
+        height: 50vh;
+        background-color: mediumslateblue;
+        width: 50%;
+        opacity: 0.9;
+        z-index: 2;
+        top: 70px;
+        max-width: 150px;
+        margin-right: 20px;
+        padding: 15px 20px;
+        position: fixed;
+        animation: animacion_menu_movil_cerrado 0.0001s forwards;
+    }
+    .menu_movil div{
+        padding: 15px;
+        border-bottom: 1px solid #fff;
+        text-align: center;
+    }
+    .menu_movil div:hover{
+        background-color: rgb(62, 62, 145);
+        color: #fff
+    }
+    .menu_movil div a{
+        text-decoration: none;
+        color: #fff;
+        
+    }
+    .menu_movil_abierto{
+        animation: animacion_menu_movil_abierto 0.0001s forwards;
+    }
+    .contenedor_inicio .imagen_inicio h1{
+        font-size: 40px;
+        padding: 110px 0px 180px 25px;
+        letter-spacing: 5px;
+    }
+    .contenedor_inicio .imagen_inicio .texto_inicio{
+        margin-top: -180px;
+        flex-direction: column-reverse;
+        
+    }
+    .contenedor_inicio .imagen_inicio .texto_inicio h2{
+        padding: 15px 0px 10px 20px;
+        color: #352e2e;
+    }
+    .contenedor_inicio .imagen_inicio .texto_inicio p{
+        padding:20px 0px 10px 20px;
+        width: 80%;
+        margin-left: 20px;
+        background-color: rgba(255, 255, 255, 0.192);
+    }
+    .contenedor_inicio .imagen_inicio button{
+        position: absolute;
+        border: 1px solid #d4e6f7;
+        margin: 15px 0px 10px 20px;
+        background-color:hsla(0, 0%, 100%, 0.521);
+    }
+    .propiedades_sala h3{
+        padding-top: 50px;
+        padding-bottom: 15px;
+    }
+    .propiedades_sala .prop_sala .salas{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .propiedades_sala .prop_sala .salas .parrafo{
+        width: 90%;
+        margin-top: 15px;
+        padding-left: 0px;
+        margin-bottom: 10px;
+    }
+    .propiedades_sala .prop_sala #sala2{
+        flex-direction: column;
+    }
+    .propiedades_sala .prop_sala #sala2 .parrafo{
+        padding: 0px
+    }
+    .propiedades_rentales h3{
+        padding-bottom: 20px;
+    }
+    .propiedades_rentales .prop_rental{
+        flex-direction: column;
+    }
+    .propiedades_rentales .prop_rental .rentals{
+        width: 90%;
+        margin-bottom: 50px;
+    }
+    .propiedades_rentales .prop_rental .rentals img {
+        width: 100%;
+    }
+    .propiedades_rentales .prop_rental .rentals .articulo {
+        width: 95%;
+        margin-top: 30px;
+    }
+    .contenedor_bay{
+        width: 90%;
+        margin-bottom: 40px;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: minmax(200px,200px) minmax(200px,200px) minmax(200px,200px) minmax(200px,200px);      
+    }
+    #bay3{
+        display: grid;
+        grid-row: 4/5;
+    }
+    .contenedor_clientes .imagen_clientes{
+        height: 70vh;
+    }
+    .contenedor_clientes .imagen_clientes h3{
+        font-size: 20px;
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    .contenedor_clientes .imagen_clientes .clientes{
+        width: 90%;
+        flex-direction: column;
+    }
+    .contenedor_clientes .imagen_clientes .clientes article{
+        font-size:15px;
+        padding-bottom: 5px;
+    }
+    .contenedor_formulario{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .contenedor_formulario .formulario{
+        margin-left: 0px;
+    }
+    .contenedor_formulario .texto h6{
+        font-size: 18px;
+    }
+    .contenedor_formulario .texto .texto1{
+        font-size: 15px;
+    }
+    .contenedor_formulario .texto p{
+        font-size: 15px;
+    }
+    .contenedor_formulario .formulario h6{
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    .contenedor_formulario .formulario .formulario1{
+        flex-direction: column;
+    }
+    .contenedor_formulario .formulario .formulario1 .formulario2 input{
+        background-color: transparent;
+        padding-right: 165px;
+    }
+    .contenedor_formulario .formulario .formulario1 .formulario2 textarea{
+        display: block;
+        min-width: 345px;
+        margin-left: 0.2px;  
+    }
+    .contenedor_formulario .formulario #completar_formulario button{
+        margin-top: 20px;
+        margin-left: 285px;
+    }
+}
