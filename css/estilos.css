@@ -27,6 +27,7 @@ header nav{
     align-items: center;
     justify-content: space-between;
     font-family: 'Bebas Neue';
+    font-size: 20px;
     letter-spacing: 3px;
 }
 .txt_inicio{
@@ -51,7 +52,7 @@ header nav a:hover{
 }
 header nav .barras{
     cursor: pointer;
-    font-size: 20px;
+    font-size: 24px;
     display: none;
     position: relative;
 }
@@ -74,14 +75,15 @@ header nav .barras{
 .contenedor_inicio .imagen_inicio .texto_inicio{
     display:flex ;  
     flex-direction: column;
+    gap: 10px;
     padding: 15px 0px 10px 0px;
 }
 .contenedor_inicio .imagen_inicio .texto_inicio h2{
-    font-size: 25px;
+    font-size: 26px;
     color: #000;
 }
 .contenedor_inicio .imagen_inicio .texto_inicio p{
-    font-size: 15px;
+    font-size: 16px;
     width: 30%;
     color: #000;
 }
@@ -322,11 +324,10 @@ header nav .barras{
 @media screen and (max-width: 900px) {
     header{
         padding: 20px;
-        height: 20vh;
         justify-content: space-between;
     }
     header h1{
-        width: 50%;
+        font-size: 28px;
     }
     header nav{
         margin-top: 15px;
@@ -355,12 +356,11 @@ header nav .barras{
         }
     }    
     .menu_movil{
-        height: 50vh;
         background-color: mediumslateblue;
         width: 50%;
         opacity: 0.9;
         z-index: 2;
-        top: 70px;
+        top: 60px;
         max-width: 150px;
         margin-right: 20px;
         padding: 15px 20px;
@@ -379,7 +379,6 @@ header nav .barras{
     .menu_movil div a{
         text-decoration: none;
         color: #fff;
-        
     }
     .menu_movil_abierto{
         animation: animacion_menu_movil_abierto 0.0001s forwards;
@@ -390,9 +389,8 @@ header nav .barras{
         letter-spacing: 5px;
     }
     .contenedor_inicio .imagen_inicio .texto_inicio{
-        margin-top: -180px;
+        margin-top: -160px;
         flex-direction: column-reverse;
-        
     }
     .contenedor_inicio .imagen_inicio .texto_inicio h2{
         padding: 15px 0px 10px 20px;
